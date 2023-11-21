@@ -18,7 +18,7 @@ function Signup(props) {
                 props.showAlert("Password Incorrect",'warning')
             }
             else{
-                const response=await fetch("https://todolistbackend-egq1.onrender.com/",
+                const response=await fetch("https://todolistbackend-egq1.onrender.com/register/",
             {
                 method:'POST',
                 headers:{
