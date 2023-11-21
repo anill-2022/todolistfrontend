@@ -43,14 +43,14 @@ function Todos() {
 
     return (
         <>
-            <div className='display-4 text-light my-5 m-2 text-center'>
+            <div className='display-4 text-teal-100 my-5 text-center' style={{marginLeft:"310px",fontFamily:"Shojumaru"}}>
                 Todos
             </div>
-            <div className='container text-danger text-center mx-3'>
+            <div className='container text-danger text-center ' style={{marginLeft:"140px"}}>
                 {todos.length === 0 && "No Todos Please Add"}
 
             </div>
-            <table className='mx-5 p-5 text-light text-center table'>
+            <table className='text-light text-center table' style={{marginLeft:"130px"}}>
                 <thead>
                     <tr>
                         <th scope="col">Title</th>

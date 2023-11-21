@@ -20,7 +20,7 @@ const handleClick=(e)=>{
     <div className='w-full h-screen bg-[#1a1a1a] flex'>
     <div className='w-[30%] h-[100%] bg-[#1a1a1a] text-white flex '>
          <div className="card bg-[#1a1a1a] m-2 p-2 my-5">
-         <h3 className="display-4 text-light text-center">
+         <h3 className="display-4 text-teal-500 text-center" style={{fontFamily:"Shojumaru"}}>
              Add Todo
          </h3>
          <br/>

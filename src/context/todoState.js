@@ -29,7 +29,7 @@ const TodoState=(props)=>{
 
   const getTodos= async()=>{
       //Api call
-      const response=await fetch('${host}/fetchalltodo/',{
+      const response=await fetch(`${host}/fetchalltodo/`,{
           method:"GET",
           headers:{
               'Content-Type':'application/json',
@@ -57,7 +57,7 @@ const TodoState=(props)=>{
 
     });
     const json = await response.json(); 
-
+    setTodo(json);
      let newTodos = JSON.parse(JSON.stringify(todos))
     // Logic to edit in client
     for (let index = 0; index < newTodos.length; index++) {
@@ -84,6 +84,7 @@ const TodoState=(props)=>{
       }
     });
     const json = response.json(); 
+    setTodo(json);
     const newTodos = todos.filter((todo) => { return todo._id !== id })
     setTodo(newTodos)
     props.showAlert("Todo Deleted","danger")

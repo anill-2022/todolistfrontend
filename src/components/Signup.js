@@ -86,7 +86,9 @@ function Signup(props) {
         </div>
         <div className='w-[50%] h-[100%] flex justify-center
          items-center bg-teal-800'> 
-            <h2 className='text-3xl text-light'>SIGNUP</h2>
+         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" className="w-full" alt="Phone" />
+                        
+            
         </div>
     </div>
   )

@@ -48,8 +48,10 @@ function Login(props) {
     return (
         <div className='w-full h-screen flex'>
             <div className='w-[50%] h-[100%] bg-[#1a1a1a] text-white flex justify-center items-center'>
+            
                 <form onSubmit={handleSubmit} className='text-center border rounded-lg w-[600px]
              h-[350px] p-9'>
+                
                     <label htmlFor='email' className='form-label'>
                         <i className="fa-solid fa-envelope-circle-check"></i>   Email</label>
                     <br />
@@ -69,7 +71,7 @@ function Login(props) {
                 </form>
             </div>
             <div className='w-[50%] h-[100%] flex justify-center
-         items-center bg-teal-800 '><h2 className='text-3xl text-light'>LOGIN</h2>
+         items-center bg-teal-800 ' style={{backgroundImage:"url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp)",backgroundRepeat:"no-repeat"}}><h2 className='text-3xl text-light'> </h2>
             </div>
         </div>
     )

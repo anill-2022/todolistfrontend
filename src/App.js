@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import TodoState from './context/todoState';
+import Hom from './components/Hom';
 function App() {
   const [alert, setAlert] = useState(null)
   const showAlert = (message, type) => {
@@ -27,7 +28,8 @@ function App() {
           <Navbar title="MY TODO" />
           <Alert alert={alert} />
           <Routes>
-            <Route exact path="/" element={<Home showAlert={showAlert}/>} />
+          <Route exact path="/" element={<Hom/>} />
+          {!!localStorage.getItem('token') && <Route exact path="/Home" element={<Home showAlert={showAlert}/>} />}
             <Route exact path="/signup" element={<Signup showAlert={showAlert}/>} />
             <Route exact path="/login" element={<Login showAlert={showAlert}/>} />
 
