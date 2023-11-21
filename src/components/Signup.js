@@ -18,7 +18,7 @@ function Signup(props) {
                 props.showAlert("Password Incorrect",'warning')
             }
             else{
-                const response=await fetch("http://localhost:5000/register/",
+                const response=await fetch("https://tomorrow.onrender.com/register/",
             {
                 method:'POST',
                 headers:{
